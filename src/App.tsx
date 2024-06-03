@@ -14,7 +14,7 @@ const App = (props: Props) => {
       <div className="w-full h-full min-h-full flex flex-col">
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="*" element={<Home />} />
           <Route path="/subscribers" element={<Subscribers />} />
           <Route path="/add" element={<AddSubscriber />} />
           <Route path="/send" element={<SendNewsletter />} />
