@@ -1,6 +1,7 @@
 {
   "name": "dowell-newsletter",
   "version": "0.1.0",
+  "homepage": "https://helloukey.github.io/dowell-newsletter/",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.5",
