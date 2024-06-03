@@ -1,46 +1,63 @@
-# Getting Started with Create React App
+# Dowell Newsletter
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a newsletter application built with React, TypeScript, Tailwind CSS, and Redux Toolkit.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+### Subscribing
 
-### `npm start`
+- Users can subscribe to the newsletter by providing their email address.
+- Subscriptions are managed through a form that validates user input and communicates with the backend API to add new subscribers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Unsubscribing
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Users can unsubscribe from the newsletter by following a link in the emails they receive.
+- The application handles the request to remove the user from the subscription list.
 
-### `npm test`
+### Sending Newsletters
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Admins can create and send newsletters to all subscribers.
+- The application provides a form for composing newsletters, which is then sent to the backend API to be distributed to all subscribers.
 
-### `npm run build`
+## Installation and Running the Project
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To set up the project locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Clone the Repository
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+git clone https://github.com/helloukey/dowell-newsletter.git
+cd dowell-newsletter
+```
 
-### `npm run eject`
+- Install Dependencies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Run the Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm run start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## TypeScript Features
 
-## Learn More
+- **Static Typing**: Reduces runtime errors and enhances development efficiency.
+- **Interfaces and Types**: Define structures for components and state.
+- **Type Inference**: Automatically infers types for better code readability.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## State Management with Redux Toolkit
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The project utilizes the Redux Toolkit for state management, replacing the older Redux methodology. The Redux Toolkit offers:
+
+- **Simplified Syntax**: Reduces boilerplate code.
+- **Built-in Middleware**: Enhances functionality and development experience.
+- **Modern API Fetching**: Uses createAsyncThunk for handling async requests.
+
+## Styling with Tailwind CSS
+
+- **Utility-First Framework**: Provides low-level utility classes.
+- **Customization**: Easy to customize to match the project design.
+- **Responsive Design**: Built-in support for responsive design principles.
