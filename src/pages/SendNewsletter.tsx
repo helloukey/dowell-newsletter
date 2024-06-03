@@ -127,6 +127,7 @@ const SendNewsletter = () => {
               placeholder="File"
               required
               id="fileInput"
+              accept=".html"
             />
           </div>
           <div className="form-control mt-6">
